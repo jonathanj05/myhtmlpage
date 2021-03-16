@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{insert page title here}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+  background-color: rgb(2, 2, 2);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 100px; /* only for demonstration, should be removed */
+  background: white;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+   
+<h1 span style='font-size:100px;'> &#9760 WELCOME TO THE $#!T SHOW &#9760</h1 span>
+
+
+ <header>This is about some guy named Jonathan</header>
+ <p>Jonathan is the oldest of 3, is married and spent the last 7 years serving in the military.</p>
+ <p>He was born and raised in Chicago Illinios, attended Chicago Hope Academy Highschool. He is a advet football fan and roots for the Chicago Bears.</p>
+ 
+ 
+    
+  
+  <section>
+    <nav>
+        <h2>Time in the Military</h2>
+        <p>Jonathan served a total of 7 years, he enlisted in 2013 and was sent to FT.Campbell where he spent 4 years, 
+            followed by a year at Camp Humphries S.Korea, and his final 2 years 
+            were spent in the frozen tundra of upstate New York at FT.Drum.</p>
+        <p>{annnnd Mooooreee Bullshit}</p>
+        <p>{yup more bullshit}<p>
+    </nav>
+    
+    <article>
+      <h1>Hobbies</h1>
+      <p>In his spare time Jonathan likes to tinker and tear apart anything and everything, from cars to guitars. He also loves to work out 
+          and go to the gym. 
+      </p>
+      <h2>{inseret}</h2>
+      <p>{........}</p>
+    </article>
+  </section>
+  
+  <footer>
+    <p>{nonsense}</p>
+  </footer>
+  
+  </body>
+  </html>
+
