@@ -11,37 +11,53 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
+  
 }
 /* Style the header */
-header {
-  background-color: rgb(2, 2, 2);
+.header {
+  background-color:grey;
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: white;
+  color:grey;
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 30%;
-  height: 100px; /* only for demonstration, should be removed */
-  background: white;
-  padding: 20px;
+  width: 40%;
+  height: 500px; /* only for demonstration, should be removed */
+  background:black;
+  padding: 40px;
 }
 
 /* Style the list inside the menu */
-nav ul {
+ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  /*background-color: gray;*/
 }
 
 article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  float: right;
+  display: block;
+  padding: 30px;
+  width: 60%;
+  background-color: black;
+ /* height: 560px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -51,10 +67,10 @@ section::after {
   clear: both;
 }
 
-/* Style the footer */
+/*Style the footer*/ 
 footer {
-  background-color: #777;
-  padding: 10px;
+  background-color: #dddddd;
+  padding: 30px;
   text-align: center;
   color: white;
 }
@@ -69,39 +85,55 @@ footer {
 </style>
 </head>
 <body>
-   
-<h1 span style='font-size:100px;'> &#9760 WELCOME TO THE $#!T SHOW &#9760</h1 span>
 
+<div class="header">
+  <h1 style="color: white;">  Jonathan Jauregui </h1>
+</div>
+  <ul>
+    <li style="color: white;"><a href="https://codingtemple.com/">Coding Temple</a></li>
+    <li style="color: white;"><a href="https://www.w3schools.com/html/default.asp">Learn HTML</a></li>
+    <li style="color: white;"><a href="https://www.w3schools.com/css/default.asp">Learn CCS</a></li>
+    <li style="color: white;"><a href="#about">About</a></li>
+  </ul>
+  
 
- <header>This is about some guy named Jonathan</header>
- <p>Jonathan is the oldest of 3, is married and spent the last 7 years serving in the military.</p>
- <p>He was born and raised in Chicago Illinios, attended Chicago Hope Academy Highschool. He is a advet football fan and roots for the Chicago Bears.</p>
+<h2 style="color: white;"><br> About Jonathan </h2>
+ <p style="color: white;"> Jonathan is the oldest of 3, is married and spent the last 7 years serving in the military.</p>
+ <p style="color: white;"> He was born and raised in Chicago Illinios, attended Chicago Hope Academy Highschool. He loves football and roots for the Chicago Bears.</p>
  
  
     
   
   <section>
     <nav>
-        <h2>Time in the Military</h2>
-        <p>Jonathan served a total of 7 years, he enlisted in 2013 and was sent to FT.Campbell where he spent 4 years, 
+        <h2 style="color: white;">Time in the Military</h2>
+        <p style="color: white;">Jonathan served a total of 7 years, he enlisted in 2013 and was sent to FT.Campbell where he spent 4 years, 
             followed by a year at Camp Humphries S.Korea, and his final 2 years 
             were spent in the frozen tundra of upstate New York at FT.Drum.</p>
-        <p>{annnnd Mooooreee Bullshit}</p>
-        <p>{yup more bullshit}<p>
+            <img src="unit_patches.jpg" alt="Unit patches for each duty station location" style="width: 300px;height:300px;">
+        <p style="color: white;">{insert stuff here}<p>
     </nav>
     
     <article>
-      <h1>Hobbies</h1>
-      <p>In his spare time Jonathan likes to tinker and tear apart anything and everything, from cars to guitars. He also loves to work out 
-          and go to the gym. 
+      <h1 style="color: white;">Hobbies</h1>
+      <p style="color: white;">In his spare time Jonathan likes to tinker and tear apart anything and everything, from cars to guitars. He also loves to work out 
+          and go to the gym. Currently Jonathan, is enrolled in Coding Temple where he looks forward to building his skills and 
+        and knowledg to further his career.
       </p>
-      <h2>{inseret}</h2>
-      <p>{........}</p>
+      <p style="color: white;">Jonathan also enjoys to play his guitar, his favorite songs to play are by 
+        the Foo Fighters. Which happen to be his favorite band.
+      </p>
+      <img src = "foo_fighters.jpg" alt="Foo FIghters logo" style="width: 200px; height: 150px;">
     </article>
   </section>
   
-  <footer>
-    <p>{nonsense}</p>
+  <footer><br>
+    <h1>
+      Follow Me
+    </h1>
+    <ul>
+      insert social media links here
+    </ul>
   </footer>
   
   </body>
